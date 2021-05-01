@@ -1,16 +1,15 @@
 {
   "name": "javascript-code-runner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Run your JavaScript code snippets in the browser. A sandboxed JavaScript interpreter.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack",
     "test": "jest",
-    "test:coverage": "jest --coverage",
     "test:watch": "jest --selectProjects test --watch",
     "type-check": "tsc",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(ts|js|json|md)\"",
+    "format": "prettier --write \"**/*.+(ts|js|json|md)\"",
     "validate": "npm run type-check && npm run test:coverage",
     "setup": "npm ci && npm run validate"
   },

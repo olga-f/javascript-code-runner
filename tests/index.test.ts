@@ -1,4 +1,4 @@
-import JSrunner from "../dist/"
+import JSrunner from "../dist/index";
 
 const fibonacciCode = `
 const result = [];
@@ -59,7 +59,7 @@ const fibonacci = (n, result) => {
 }
 fibonacci(12, result);
 `;
-const resultWithUndefined = `Undefined.`;
+const resultWithUndefined = `Undefined function or variable`;
 
 test("fibonacci code to equal result", () => {
   const { result, message } = JSrunner(fibonacciCode);
