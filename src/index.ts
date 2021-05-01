@@ -15,7 +15,7 @@ export const JSrunner: (code: string) => Props = (code: string): Props => {
     jsInterpreter.run();
     jsInterpreter.value !== undefined
       ? (output.result = jsInterpreter.value.toString())
-      : (output.message = "Undefined.");
+      : (output.message = "Undefined function or variable");
     return output;
   } catch (error) {
     output.message = error.toString();
