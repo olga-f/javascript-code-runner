@@ -1,0 +1,7 @@
+
+/node_modules
+# testing
+/coverage
+.cache
+# debug
+npm-debug.log*

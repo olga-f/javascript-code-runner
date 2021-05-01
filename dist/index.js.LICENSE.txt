@@ -1,0 +1,44 @@
+/*
+	object-assign
+	(c) Sindre Sorhus
+	@license MIT
+	*/
+
+/*!
+	   * The buffer module from node.js, for the browser.
+	   *
+	   * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+	   * @license  MIT
+	   */
+
+/*! ../original-repo/interpreter */
+
+/*! ./original-repo/acorn.js */
+
+/*! exports provided: default */
+
+/*! no static exports found */
+
+/*! vm */
+
+/*!*******************************!*\
+  !*** ./src/js-interpreter.js ***!
+  \*******************************/
+
+/*!********************************!*\
+  !*** ./original-repo/acorn.js ***!
+  \********************************/
+
+/*!**************************************!*\
+  !*** ./original-repo/interpreter.js ***!
+  \**************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/vm-browserify/index.js ***!
+  \*********************************************/
+
+/**
+ * @license
+ * Copyright 2013 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
+ */

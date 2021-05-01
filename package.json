@@ -1,0 +1,66 @@
+{
+  "name": "javascript-code-runner",
+  "version": "1.0.0",
+  "description": "Run your JavaScript code snippets in the browser. A sandboxed JavaScript interpreter.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --selectProjects test --watch",
+    "type-check": "tsc",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(ts|js|json|md)\"",
+    "validate": "npm run type-check && npm run test:coverage",
+    "setup": "npm ci && npm run validate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olga-f/javascript-code-runner.git"
+  },
+  "keywords": [
+    "javascript",
+    "runner",
+    "executor",
+    "playground",
+    "coding",
+    "code",
+    "interpreter",
+    "code-runner",
+    "repl",
+    "sandbox"
+  ],
+  "author": "Olga F. Andreiko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olga-f/javascript-code-runner/issues"
+  },
+  "homepage": "https://github.com/olga-f/javascript-code-runner#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/babel__standalone": "^7.1.3",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^26.6.3",
+    "jest-runner-eslint": "^0.10.0",
+    "jest-watch-select-projects": "^2.0.0",
+    "jest-watch-typeahead": "^0.6.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "@babel/standalone": "^7.14.0",
+    "js-interpreter": "^2.3.0"
+  }
+}
