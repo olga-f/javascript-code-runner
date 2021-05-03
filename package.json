@@ -10,7 +10,7 @@
     "test:watch": "jest --selectProjects test --watch",
     "type-check": "tsc",
     "format": "prettier --write \"**/*.+(ts|js|json|md)\"",
-    "validate": "npm run type-check && npm run test:coverage",
+    "validate": "npm run type-check && npm run test",
     "setup": "npm ci && npm run validate"
   },
   "repository": {

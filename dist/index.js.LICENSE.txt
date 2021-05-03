@@ -38,6 +38,12 @@
   \*********************************************/
 
 /**
+ * @fileoverview JavaScript Code Runner
+ * @author olgafesh@hotmail.com (Olga F. Andreiko)
+ * @license  MIT
+ */
+
+/**
  * @license
  * Copyright 2013 Google LLC
  * SPDX-License-Identifier: Apache-2.0

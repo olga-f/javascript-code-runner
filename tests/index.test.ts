@@ -61,6 +61,17 @@ fibonacci(12, result);
 `;
 const resultWithUndefined = `Undefined function or variable`;
 
+const emptyCode = `3+1  `;
+const resultEmptyCode = `There's no code to execute.`;
+
+const codeNoRun = `
+function fibonacci(num) {
+    if (num <= 1) return 1;
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
+`;
+const resultCodeNoRun = `The code does not execute.`;
+
 test("fibonacci code to equal result", () => {
   const { result, message } = JSrunner(fibonacciCode);
   expect(result).toBe(fibonacciResult);
@@ -89,4 +100,16 @@ test("code with undefined", () => {
   const { result, message } = JSrunner(codeWithUndefined);
   expect(result).toBe(null);
   expect(message).toBe(resultWithUndefined);
+});
+
+test("empty code", () => {
+  const { result, message } = JSrunner(emptyCode);
+  expect(result).toBe(null);
+  expect(message).toBe(resultEmptyCode);
+});
+
+test("code not called", () => {
+  const { result, message } = JSrunner(codeNoRun);
+  expect(result).toBe(null);
+  expect(message).toBe(resultCodeNoRun);
 });
