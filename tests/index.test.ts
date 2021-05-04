@@ -61,7 +61,7 @@ fibonacci(12, result);
 `;
 const resultWithUndefined = `Undefined function or variable`;
 
-const emptyCode = `3+1  `;
+const emptyCode = `    `;
 const resultEmptyCode = `There's no code to execute.`;
 
 const codeNoRun = `

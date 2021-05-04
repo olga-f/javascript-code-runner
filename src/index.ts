@@ -7,7 +7,7 @@ type Props = {
 };
 export const JSrunner: (code: string) => Props = (code: string): Props => {
   const output: Props = { result: null, message: null };
-  if (code.trim().length < 5) {
+  if (code.trim().length < 1) {
     output.message = "There's no code to execute.";
     return output;
   }
