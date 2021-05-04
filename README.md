@@ -1,7 +1,7 @@
 # JavaScript Code Runner
 
-<span class="badge-npmversion"><a href="https://npmjs.org/package/badges" title="View this project on NPM"><img src="https://img.shields.io/npm/v/javascript-code-runner.svg" alt="NPM version" /></a></span>
-<span class="badge-npmdownloads"><a href="https://npmjs.org/package/badges" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/javascript-code-runner.svg" alt="NPM downloads" /></a></span>
+<span class="badge-npmversion"><a href="https://www.npmjs.com/package/javascript-code-runner" title="View this project on NPM"><img src="https://img.shields.io/npm/v/javascript-code-runner.svg" alt="NPM version" /></a></span>
+<span class="badge-npmdownloads"><a href="https://www.npmjs.com/package/javascript-code-runner" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/javascript-code-runner.svg" alt="NPM downloads" /></a></span>
 
 JavaScript Code Runner allows the execution of JavaScript code.
 This package base on an awesome [JS-Interpreter](https://github.com/NeilFraser/JS-Interpreter) written by Google's Neil Fraser.
