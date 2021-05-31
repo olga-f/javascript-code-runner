@@ -2,4 +2,6 @@
 **/*
 
 # override above and include dist files
-!dist/
+!dist/index.js
+!dist/index.d.ts
+!dist/index.js.LICENSE.txt
