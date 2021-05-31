@@ -1,0 +1,5 @@
+# ignore all
+**/*
+
+# override above and include dist files
+!dist/

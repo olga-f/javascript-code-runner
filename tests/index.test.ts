@@ -72,6 +72,14 @@ function fibonacci(num) {
 `;
 const resultCodeNoRun = `The code does not execute.`;
 
+const codeObjectAssign = `
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+const output = Object.assign(target, source);
+JSON.stringify(output);
+`;
+const assignResult = '{"a":1,"b":4,"c":5}';
+
 test("fibonacci code to equal result", () => {
   const { result, message } = JSrunner(fibonacciCode);
   expect(result).toBe(fibonacciResult);
@@ -112,4 +120,10 @@ test("code not called", () => {
   const { result, message } = JSrunner(codeNoRun);
   expect(result).toBe(null);
   expect(message).toBe(resultCodeNoRun);
+});
+
+test("code with Object.assign() to equal assignResult", () => {
+  const { result, message } = JSrunner(codeObjectAssign);
+  expect(result).toBe(assignResult);
+  expect(message).toBe(null);
 });

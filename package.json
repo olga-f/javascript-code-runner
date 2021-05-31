@@ -1,6 +1,6 @@
 {
   "name": "javascript-code-runner",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Run your JavaScript code snippets in the browser. A sandboxed JavaScript interpreter.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -20,25 +20,33 @@ npm i javascript-code-runner
 ```javascript
 import JSrunner from "javascript-code-runner";
 
-const code = `function squareArrayOutOfPlace(intArray) {
-  // We allocate a new array that we'll fill in with the new values
-  const squaredArray = [];
-
-  intArray.forEach((int, index) => {
-    squaredArray[index] = Math.pow(int, 2);
-  });
-
-  return squaredArray;
+const fibonacciCode = `
+const result = [];
+const fibonacci = (n, result) => {
+  var a = 1, b = 1, sum;
+  for (var i = 0; i < n; i++) {
+    result.push(a);
+    sum = a + b;
+    a = b;
+    b = sum;
+  }
 }
-const originalArray = [2, 3, 4, 5];
-squareArrayOutOfPlace(originalArray);`;
+fibonacci(12, result);
+result.join(', ');`;
 
-const { result, message } = JSrunner(code);
-console.log(result); // 4,9,16,25
+const { result, message } = JSrunner(fibonacciCode);
+console.log(result); // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
 console.log(message); // null (error message)
 ```
 
-## Limitation
+#### Example with a web worker
 
-Original Neil Fraser interpreter that used in this package understand only ES5 syntax.
-This package uses [Babel Standalone](https://babeljs.io/docs/en/babel-standalone) for transpiling newer versions of JavaScript to ES5. You might run code snippets with modern syntax in Javascript Code Runner, but some polyfills may be missing.
+_worker.js_
+
+```javascript
+import JSrunner from "javascript-code-runner";
+
+addEventListener("message", (e) => {
+  postMessage(JSrunner(e.data));
+});
+```
